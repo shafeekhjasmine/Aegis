@@ -1,0 +1,23 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! 
+npm ERR! While resolving: frontend-nextjs@0.1.0
+npm ERR! Found: storybook@8.6.14
+npm ERR! node_modules/storybook
+npm ERR!   dev storybook@"8.6.14" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer storybook@"^9.0.1" from eslint-plugin-storybook@9.0.1
+npm ERR! node_modules/eslint-plugin-storybook
+npm ERR!   dev eslint-plugin-storybook@"*" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! /home/swebot/.npm/_logs/2025-05-30T11_34_30_201Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/swebot/.npm/_logs/2025-05-30T11_34_30_201Z-debug-0.log
