@@ -202,10 +202,12 @@ INSTALLED_APPS = [
     "allauth.mfa",
     "huey.contrib.djhuey",
     "storages",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -216,6 +218,11 @@ MIDDLEWARE = [
     "django_structlog.middlewares.RequestMiddleware",
     "core.custom_middleware.AuditlogMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
 ]
 
 ROOT_URLCONF = "ciso_assistant.urls"
